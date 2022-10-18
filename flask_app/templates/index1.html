@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaskアプリ</title>
+</head>
+
+<body>
+    <!-- <h1>こんにちは、世界！</h1>
+    <h2>Flaskアプリへようこそ！</h2>
+    <h3>{{ utc_dt }}</h3> -->
+    <!--オブジェクトを埋め込む-->
+    {% extends 'base.html' %}
+    <!-- 1.親の指定 -->
+
+    <!-- 2.contentブロックの置き換え -->
+    {% block content %}
+    <!-- 2.titleブロックの置き換え -->
+    <h1>{% block title %} Index {% endblock %}</h1>
+    <h1>Hello World!</h1>
+    <h2>Welcome to FlaskApp</h2>
+    <h3>{{ utc_dt }}</h3>
+    {% endblock %}
+</body>
+
+</html>
